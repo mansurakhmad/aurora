@@ -1,16 +1,12 @@
 <script lang="ts" setup>
-import { Button } from 'ant-design-vue';
-import { FireOutlined } from '@ant-design/icons-vue';
-
-const name = 'vue js';
+import { BaseLayout } from '@/widgets/BaseLayout';
+import { SearchForm } from '@/widgets/SearchForm';
 </script>
 
 <template>
-  <div class="root">I love {{ name }}</div>
-  <Button>
-    Click!
-    <FireOutlined />
-  </Button>
+  <BaseLayout>
+    <SearchForm />
+  </BaseLayout>
 </template>
 
 <style lang="scss" scoped>
