@@ -1,9 +1,16 @@
 <script lang="ts" setup>
-const name = "vue js";
+import { Button } from 'ant-design-vue';
+import { FireOutlined } from '@ant-design/icons-vue';
+
+const name = 'vue js';
 </script>
 
 <template>
   <div class="root">I love {{ name }}</div>
+  <Button>
+    Click!
+    <FireOutlined />
+  </Button>
 </template>
 
 <style lang="scss" scoped>
