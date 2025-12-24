@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { BaseLayout } from '@/widgets/BaseLayout';
-import { SearchForm } from '@/widgets/SearchForm';
+import { UserBalance } from '@/widgets/UserBalance';
 </script>
 
 <template>
   <BaseLayout>
-    <SearchForm />
+    <UserBalance />
   </BaseLayout>
 </template>
 

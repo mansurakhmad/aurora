@@ -10,6 +10,10 @@
   font-family: "Roboto Flex", sans-serif;
 }
 
+.ant-switch-checked {
+  background-color: var(--primary-600) !important;
+}
+
 body {
   min-height: 100vh;
 }
