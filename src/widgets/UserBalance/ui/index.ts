@@ -1,1 +1,1 @@
-export { default as UserBalance } from './UserBalance.vue'
+export { default as UserBalance } from './UserBalance.vue';
