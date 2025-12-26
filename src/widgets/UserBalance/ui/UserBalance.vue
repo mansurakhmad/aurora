@@ -6,7 +6,9 @@
     </div>
     <div class="controls">
       <Switch checked-children="dollar" un-checked-children="euro" v-model:checked="isCheck" />
-      <Button size="small" type="primary" class="accountDetailsButton">Account Details</Button>
+      <Button size="small" type="primary" class="accountDetailsButton" @click="goToProfile">
+        Account details
+      </Button>
     </div>
   </CardContainer>
 </template>
@@ -15,8 +17,15 @@
 import { Button, Switch } from 'ant-design-vue';
 import { ref } from 'vue';
 import { CardContainer } from '@/shared/ui';
+import { useRouter } from 'vue-router';
+import { APP_ROUTERS } from '@/shared/constants';
 
+const router = useRouter();
 const isCheck = ref(false);
+
+const goToProfile = () => {
+  router.push(APP_ROUTERS.PROFILE_PAGE);
+};
 </script>
 
 <style lang="scss" scoped>
