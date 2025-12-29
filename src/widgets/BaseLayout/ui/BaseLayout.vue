@@ -11,7 +11,7 @@
 <style scoped lang="scss">
 .baseLayout {
   padding: 12px;
-  background-image: url('src/shared/assets/blackWiteBg.jpg');
+  background-image: url('src/shared/assets/neonbg.jpg');
   font-size: 18px;
   font-weight: 600;
   color: var(--primary-600);

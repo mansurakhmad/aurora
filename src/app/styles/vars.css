@@ -1,59 +1,75 @@
 :root {
-    --white: #fff;
-    
-    --gray-50: #F9FAFB;
-    --gray-100: #F4F5F7;
-    --gray-200: #EBECF0;
-    --gray-300: #DFE1E6;
-    --gray-400-o-85: rgba(193, 199, 208, .85);
-    --gray-400: #C1C7D0;
-    --gray-500: #8993A4;
-    --gray-600: #6B778C;
-    --gray-700: #505F79;
-    --gray-800: #344563;
-    --gray-900: #091E42;
+    /* --- 1. PRIMARY NEON (Electric Cyan) --- */
+    --primary-50: #e0fbff;
+    --primary-100: #b3f7ff;
+    --primary-200: #81f2ff;
+    --primary-300: #4debff;
+    --primary-400: #26e5ff;
+    --primary-500: #00e0ff;
+    --primary-500-o-80: rgba(0, 224, 255, .8);
+    /* Base Brand Color */
+    --primary-600: #00b8d4;
+    --primary-700: #008fa5;
+    --primary-800: #006677;
+    --primary-900: #003d47;
+    --primary-950: #002126;
 
-    --primary-50: #DEEBFF;
-    --primary-100: #B3D4FF;
-    --primary-200: #4C9AFF;
-    --primary-300: #2684FF;
-    --primary-400: #0065FF;
-    --primary-500: #0052CC;
-    --primary-600: #0747A6;
+    /* --- 2. SECONDARY (Vivid Purple) --- */
+    --secondary-50: #f5f3ff;
+    --secondary-100: #ede9fe;
+    --secondary-200: #ddd6fe;
+    --secondary-300: #c4b5fd;
+    --secondary-400: #a78bfa;
+    --secondary-500: #8b5cf6;
+    --secondary-500-o-80: rgba(139, 92, 246, .8);
+    /* Accent / Flow */
+    --secondary-600: #7c3aed;
+    --secondary-700: #6d28d9;
+    --secondary-800: #5b21b6;
+    --secondary-900: #4c1d95;
+    --secondary-950: #2e1065;
 
-    --success-50: #E3FCEF;
-    --success-100: #ABF5D1;
-    --success-200: #57D9A3;
-    --success-300: #36B37E;
-    --success-400: #00875A;
-    --success-500: #006644;
+    /* --- 3. NEUTRALS (Slate / Dark Surfaces) --- */
+    --neutral-50: #f8fafc;
+    /* White-off Text */
+    --neutral-100: #f1f5f9;
+    --neutral-200: #e2e8f0;
+    --neutral-300: #cbd5e1;
+    --neutral-400: #94a3b8;
+    --neutral-500: #64748b;
+    --neutral-600: #475569;
+    --neutral-700: #334155;
+    /* Surface Level 3 */
+    --neutral-800: #1e293b;
+    /* Surface Level 2 */
+    --neutral-900: #0f172a;
+    /* Surface Level 1 */
+    --neutral-950: #020617;
+    /* Main Background */
 
-    --warning-50: #FFFAE6;
-    --warning-100: #FFF0B3;
-    --warning-200: #FFE380;
-    --warning-300: #FFC400;
-    --warning-400: #FF991F;
-    --warning-500: #FF8B00;
+    /* --- 4. SEMANTIC (Status Colors) --- */
+    /* Success - Neon Lime */
+    --success-50: #f0fff4;
+    --success-500: #39ff14;
+    --success-900: #0a2e05;
 
-    --danger-50: #FFEBE6;
-    --danger-100: #FFBDAD;
-    --danger-200: #FF8F73;
-    --danger-300: #FF5630;
-    --danger-400: #DE350B;
-    --danger-500: #BF2600;
+    /* Danger - Neon Rose */
+    --danger-50: #fff5f7;
+    --danger-500: #ff007f;
+    --danger-900: #330019;
 
-    --focus-ring: 0 0 0 2px var(--primary-200);
-    --overlay: rgba(9, 30, 66, 0.54);
+    /* Warning - Cyber Amber */
+    --warning-50: #fffbeb;
+    --warning-500: #ffd700;
+    --warning-900: #451a03;
 
-    --bg-primary: #FFFFFF;
-    --bg-secondary: var(--gray-50);
-    --bg-tertiary: var(--gray-100);
-    --border-color: var(--gray-300);
-    --border-color-strong: var(--gray-400);
+    /* --- 5. SPECIAL NEON UTILITIES --- */
+    /* Glow Effects (Свечение) */
+    --glow-primary: 0 0 12px rgba(0, 224, 255, 0.4);
+    --glow-success: 0 0 12px rgba(57, 255, 20, 0.3);
+    --glow-danger: 0 0 12px rgba(255, 0, 127, 0.3);
 
-    --text-primary: var(--gray-900);
-    --text-secondary: var(--gray-700);
-    --text-tertiary: var(--gray-600);
-    --text-disabled: var(--gray-500);
-    --text-on-primary: #FFFFFF;
+    /* Gradients for Charts & Cards */
+    --gradient-neon: linear-gradient(135deg, var(--primary-500-o-80), var(--secondary-500-o-80));
+    --gradient-dark: linear-gradient(180deg, var(--neutral-900), var(--neutral-950));
 }

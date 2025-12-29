@@ -15,7 +15,7 @@ import { Option } from 'ant-design-vue/es/vc-select';
 <style lang="scss" scoped>
 .currency {
   width: 85px;
-  background-color: var(--gray-400-o-85);
+  background-color: var(--neutral-100);
   font-weight: 500;
   color: var(--text-primary);
   border: 2px solid var(--white);

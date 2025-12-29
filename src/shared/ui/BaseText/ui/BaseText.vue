@@ -34,9 +34,12 @@ const { size = 'md' } = defineProps<{ size?: Size }>();
     line-height: 28px;
   }
   &.size-xxl {
-    font-size: 28px;
-    line-height: 34px;
     font-weight: 600;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--neutral-950);
   }
 }
 </style>

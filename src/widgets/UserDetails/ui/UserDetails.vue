@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { BaseText, CardContainer, CurrencySelect } from '@/shared/ui';
-import { Button, Divider, Input } from 'ant-design-vue';
+import { BaseText, CardContainer, CurrencySelect, BaseButton } from '@/shared/ui';
+import { Divider, Input } from 'ant-design-vue';
+
+const handleSubmit = () => {}
 </script>
 
 <template>
@@ -8,9 +10,11 @@ import { Button, Divider, Input } from 'ant-design-vue';
     <BaseText size='xxl'">User Details</BaseText>
     <Divider class="detailsDivider"/>
     <form class="balanceForm">
-      <Input class="amount" placeholder="Enter your current balance"/>
-      <CurrencySelect />
-      <Button class="saveButton">Save</Button>
+      <div class="fieldsLine">
+        <Input class="amount" placeholder="Enter your current balance"/>
+        <CurrencySelect />
+      </div>
+      <BaseButton @on-click="handleSubmit">Save</BaseButton>
     </form>
   </CardContainer>
 </template>
@@ -25,10 +29,14 @@ import { Button, Divider, Input } from 'ant-design-vue';
 
 .balanceForm {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  .fieldsLine {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
   .amount {
-    background-color: var(--gray-400-o-85);
+    background-color: var(--neutral-100);
     font-weight: 500;
     width: 200px;
     border: 2px solid var(--white);

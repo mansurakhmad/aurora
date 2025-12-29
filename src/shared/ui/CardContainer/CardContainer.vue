@@ -12,6 +12,6 @@
   @include blockBorder;
   padding: 16px 24px;
   display: flex;
-  background: var(--gray-400-o-85);
+  background: var(--gradient-neon);
 }
 </style>
